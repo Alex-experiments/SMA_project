@@ -3,15 +3,16 @@ class CoupleValue:
     This class implements a couple value used in argument object.
 
     attr:
-        #item (rajouté)
         criterion_name
         value
     """
 
-    def __init__(self, item, criterion_name, value):
-        self.item=item
+    def __init__(self, criterion_name, value):
         self.criterion_name=criterion_name
         self.value=value
 
-    def __repr__(self):
-        return f"{self.item} <- {self.criterion_name} = {self.value}"
+    def toString(self):
+        return f"{self.criterion_name} = {self.value}"
+    
+    def __eq__(self, other):
+        return (self.criterion_name, self.value) == (other.criterion_name, other.value)

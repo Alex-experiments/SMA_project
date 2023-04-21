@@ -131,4 +131,7 @@ if __name__ == '__main__':
     print('Diesel Engine > Electric Engine : {}'.format(agent_pref.is_preferred_item(diesel_engine, electric_engine)))
     print('Electric Engine (for agent 1) = {}'.format(electric_engine.get_score(agent_pref)))
     print('Diesel Engine (for agent 1) = {}'.format(diesel_engine.get_score(agent_pref)))
+
     print('Most preferred item is : {}'.format(agent_pref.most_preferred([diesel_engine, electric_engine]).get_name()))
+
+    print('Diesel engine item is among the top 10 percent of the agent most preferred items: {}'.format(agent_pref.is_item_among_top_10_percent(diesel_engine, [diesel_engine, electric_engine])))
