@@ -41,6 +41,6 @@ Else the other agent will ask why the first one proposed this item.
 
 If an agent receives an 'ask why', it will give a weak argument supporting its preferred item to leave room for debate.\
 If an agent receives an argument it will try to counter it.\
-As soon as an agent doesn'gt find any counter argument, it will accept the item of the other agent.\
+As soon as an agent doesn'gt find any counter argument, it will accept the item of the other agent.
 
 The agents will never repeat an argument.
