@@ -37,7 +37,7 @@ The model consists of the following classes (only the main classes are listed):
 The model only runs with two agents. One agent will propose its preferred item. \
 If the proposed item is also the most preferred item of the other agent, they will agree on this item.\
 If the proposed item is among the top 10% items of the other agent, it will propose its own preferred item.\
-Else the other agent will ask why the first one proposed this item.\
+Else the other agent will ask why the first one proposed this item.
 
 If an agent receives an 'ask why', it will give a weak argument supporting its preferred item to leave room for debate.\
 If an agent receives an argument it will try to counter it.\
